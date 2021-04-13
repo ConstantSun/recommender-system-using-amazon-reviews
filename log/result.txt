@@ -1,0 +1,100 @@
+01:00:02,282 root INFO ./ratings_Electronics (1).csv
+01:00:02,282 root INFO ./main.py
+01:00:02,282 root INFO ./.vscode/settings.json
+01:00:02,282 root INFO ./log/result.txt
+01:00:06,632 root INFO Display the data
+           userId   productId  Rating   timestamp
+0   AKM1MP6P0OYPR  0132793040     5.0  1365811200
+1  A2CX7LUOHB2NDG  0321732944     5.0  1341100800
+2  A2NWSAGRHCP8N5  0439886341     1.0  1367193600
+3  A2WNBOD3WNDNKT  0439886341     3.0  1374451200
+4  A1GI0U4ZRJA8WN  0439886341     1.0  1334707200
+01:00:06,633 root INFO Shape of the data
+(7824482, 4)
+01:00:06,783 root INFO Check the datatypes
+userId        object
+productId     object
+Rating       float64
+timestamp      int64
+dtype: object
+01:00:06,856 root INFO None
+01:00:06,945 root INFO Five point summary
+count    1.048576e+06
+mean     3.973380e+00
+std      1.399329e+00
+min      1.000000e+00
+25%      3.000000e+00
+50%      5.000000e+00
+75%      5.000000e+00
+max      5.000000e+00
+Name: Rating, dtype: float64
+01:00:06,949 root INFO Minimum rating is: 1.0
+01:00:06,952 root INFO Maximum rating is: 5.0
+01:00:07,18 root INFO Number of missing values across columns: 
+userId       0
+productId    0
+Rating       0
+timestamp    0
+dtype: int64
+01:00:07,681 root INFO --------------------------------------------------
+01:00:07,681 root INFO 
+Total no of ratings : 1048576
+01:00:08,814 root INFO Total No of Users   : 786330
+01:00:09,197 root INFO Total No of products  : 61894
+01:00:10,868 root INFO Analysis of rating given by the user
+01:00:10,869 root INFO userId
+A5JLAU2ARJ0BO     412
+A231WM2Z2JL0U3    249
+A25HBO5V8S8SEA    164
+A6FIAB28IS79      146
+AT6CZDCP4TRGA     128
+Name: Rating, dtype: int64
+01:00:10,901 root INFO count    786330.000000
+mean          1.333506
+std           1.385612
+min           1.000000
+25%           1.000000
+50%           1.000000
+75%           1.000000
+max         412.000000
+Name: Rating, dtype: float64
+01:00:15,964 root INFO 
+No of rated product more than 50 per user : 38
+
+01:00:24,152 root INFO Average rating of the product:
+productId
+0972683275    4.470980
+1400501466    3.560000
+1400501520    4.243902
+1400501776    3.884892
+1400532620    3.684211
+Name: Rating, dtype: float64
+01:00:24,185 root INFO productId
+B0000DYV9H    4.947368
+B000053HC5    4.945783
+B00009R96C    4.885714
+B00005LE76    4.879310
+B000I1X3W8    4.869565
+Name: Rating, dtype: float64
+01:00:24,217 root INFO Total no of rating for product:
+productId
+B0002L5R78    9487
+B0001FTVEK    5345
+B000I68BD4    4903
+B000BQ7GW8    4275
+B00007E7JU    3523
+Name: Rating, dtype: int64
+01:00:24,275 root INFO               Rating  rating_counts
+productId                          
+0972683275  4.470980           1051
+1400501466  3.560000            250
+1400501520  4.243902             82
+1400501776  3.884892            139
+1400532620  3.684211            171
+01:00:24,279 root INFO 9487
+01:00:24,594 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+01:00:24,599 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+01:00:25,37 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+01:00:25,50 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+01:00:25,228 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+01:00:25,240 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
