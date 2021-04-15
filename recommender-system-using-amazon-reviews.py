@@ -113,15 +113,6 @@ def get_dataframe_which_users_more_50_ratings(data):
     return new_df
 
 
-# def get_popularity_based_recommendation(data):
-#     # data: pandas dataframe
-#     # Popularity Based Recommendation
-#     # Getting the new dataframe which contains users who has given 50 or more ratings
-#     new_df=data.groupby("productId").filter(lambda x:x['Rating'].count() >=50)
-    
-#     return no_of_ratings_per_product
-
-
 def visualize_num_ratings_per_product(new_df):
     no_of_ratings_per_product = new_df.groupby(by='productId')['Rating'].count().sort_values(ascending=False)
     fig = plt.figure(figsize=plt.figaspect(.5))
