@@ -331,23 +331,65 @@ def make_alg_and_test(trainset, testset):
     This function for: create the algorithm and run the algorithm on test dataset.
     Args: 
         trainset, testset        
-    Return:    
+    Return:        
     """
+    cfg = []
+    sim_options0 = {
+        'name': 'pearson_baseline', 
+        'user_based': False
+    }
+    cfg.append(sim_options0)
 
-    # Use user_based true/false to switch between user-based or item-based collaborative filtering
-    algo = KNNWithMeans(k=5, sim_options={'name': 'pearson_baseline', 'user_based': False})
-    algo.fit(trainset)
+    # To use item-based cosine similarity
+    sim_options1 = {
+        "name": "cosine",
+        "user_based": False,  # Compute  similarities between items
+        "min_support": 3,
+    }
+    cfg.append(sim_options1)
 
-    # run the trained model against the testset
-    test_pred = algo.test(testset)
+    sim_options2 = {
+        "name": "msd",
+        "user_based": False, 
+    }
+    cfg.append(sim_options2)
 
-    logging.info(test_pred)
+    sim_options3 = {
+        "name": "cosine",
+        "user_based": False, 
+        "min_support": 4,
+    } 
+    cfg.append(sim_options3)
 
-    # get RMSE
-    logging.info("Item-based Model : Test Set")
-    logging.info(accuracy.rmse(test_pred, verbose=True))
+    sim_options4 = {
+        "name": "msd",
+        "user_based": False, 
+        "min_support": 5,
+    }   
+    cfg.append(sim_options4)
 
-####
+    sim_options5 = {
+        "name": "cosine",
+        "user_based": False, 
+        "min_support": 5,
+    } 
+    cfg.append(sim_options5)
+
+
+    for index in range(len(cfg)):
+        algo = KNNWithMeans(k=5, sim_options=cfg[index])
+        algo.fit(trainset)
+
+        # run the trained model against the testset
+        test_pred = algo.test(testset)
+
+        print(test_pred[20])
+        # get RMSE
+        print(f"With index config : {index} , rmse on Test Set = {accuracy.rmse(test_pred, verbose=True)}")        
+
+
+
+
 # Model-based collaborative filtering system
 
 def get_ratings_matrix(new_df):
@@ -464,7 +506,9 @@ if __name__ == "__main__":
     data = read_data(new_df)
 
     trainset, testset = separate_data(data)
+
     make_alg_and_test(trainset, testset)
+
     ratings_matrix = get_ratings_matrix(new_df)
 
     X = transpose_matrix(ratings_matrix)    
