@@ -1,24 +1,32 @@
-01:00:02,282 root INFO ./ratings_Electronics (1).csv
-01:00:02,282 root INFO ./main.py
-01:00:02,282 root INFO ./.vscode/settings.json
-01:00:02,282 root INFO ./log/result.txt
-01:00:06,632 root INFO Display the data
+18:32:29,360 root INFO ./result1.txt
+18:32:29,360 root INFO ./result2.txt
+18:32:29,360 root INFO ./ratings_Electronics (1).csv
+18:32:29,360 root INFO ./main.py
+18:32:29,360 root INFO ./log/ratings_counts.png
+18:32:29,360 root INFO ./log/rating_dis.png
+18:32:29,360 root INFO ./log/quantiles_their_vals.png
+18:32:29,361 root INFO ./log/result.txt
+18:32:29,361 root INFO ./log/most_popular.png
+18:32:29,361 root INFO ./log/rating.png
+18:32:29,361 root INFO ./log/rating_rating_counts.png
+18:32:29,361 root INFO ./log/num_ratings_per_product.png
+18:32:33,656 root INFO Display the data
            userId   productId  Rating   timestamp
 0   AKM1MP6P0OYPR  0132793040     5.0  1365811200
 1  A2CX7LUOHB2NDG  0321732944     5.0  1341100800
 2  A2NWSAGRHCP8N5  0439886341     1.0  1367193600
 3  A2WNBOD3WNDNKT  0439886341     3.0  1374451200
 4  A1GI0U4ZRJA8WN  0439886341     1.0  1334707200
-01:00:06,633 root INFO Shape of the data
+18:32:33,656 root INFO Shape of the data
 (7824482, 4)
-01:00:06,783 root INFO Check the datatypes
+18:32:33,808 root INFO Check the datatypes
 userId        object
 productId     object
 Rating       float64
 timestamp      int64
 dtype: object
-01:00:06,856 root INFO None
-01:00:06,945 root INFO Five point summary
+18:32:33,885 root INFO None
+18:32:33,970 root INFO Five point summary
 count    1.048576e+06
 mean     3.973380e+00
 std      1.399329e+00
@@ -28,28 +36,29 @@ min      1.000000e+00
 75%      5.000000e+00
 max      5.000000e+00
 Name: Rating, dtype: float64
-01:00:06,949 root INFO Minimum rating is: 1.0
-01:00:06,952 root INFO Maximum rating is: 5.0
-01:00:07,18 root INFO Number of missing values across columns: 
+18:32:33,974 root INFO Minimum rating is: 1.0
+18:32:33,978 root INFO Maximum rating is: 5.0
+18:32:34,51 root INFO Number of missing values across columns: 
 userId       0
 productId    0
 Rating       0
 timestamp    0
 dtype: int64
-01:00:07,681 root INFO --------------------------------------------------
-01:00:07,681 root INFO 
+18:32:34,751 root INFO Total data 
+18:32:34,751 root INFO --------------------------------------------------
+18:32:34,751 root INFO 
 Total no of ratings : 1048576
-01:00:08,814 root INFO Total No of Users   : 786330
-01:00:09,197 root INFO Total No of products  : 61894
-01:00:10,868 root INFO Analysis of rating given by the user
-01:00:10,869 root INFO userId
+18:32:35,956 root INFO Total No of Users   : 786330
+18:32:36,338 root INFO Total No of products  : 61894
+18:32:38,47 root INFO Analysis of rating given by the user
+18:32:38,47 root INFO userId
 A5JLAU2ARJ0BO     412
 A231WM2Z2JL0U3    249
 A25HBO5V8S8SEA    164
 A6FIAB28IS79      146
 AT6CZDCP4TRGA     128
 Name: Rating, dtype: int64
-01:00:10,901 root INFO count    786330.000000
+18:32:38,79 root INFO count    786330.000000
 mean          1.333506
 std           1.385612
 min           1.000000
@@ -58,10 +67,10 @@ min           1.000000
 75%           1.000000
 max         412.000000
 Name: Rating, dtype: float64
-01:00:15,964 root INFO 
-No of rated product more than 50 per user : 38
+18:32:45,417 root INFO 
+ No of rated product more than 50 per user : 38
 
-01:00:24,152 root INFO Average rating of the product:
+18:32:53,184 root INFO Average rating of the product:
 productId
 0972683275    4.470980
 1400501466    3.560000
@@ -69,14 +78,14 @@ productId
 1400501776    3.884892
 1400532620    3.684211
 Name: Rating, dtype: float64
-01:00:24,185 root INFO productId
+18:32:53,218 root INFO productId
 B0000DYV9H    4.947368
 B000053HC5    4.945783
 B00009R96C    4.885714
 B00005LE76    4.879310
 B000I1X3W8    4.869565
 Name: Rating, dtype: float64
-01:00:24,217 root INFO Total no of rating for product:
+18:32:53,250 root INFO Total no of rating for product:
 productId
 B0002L5R78    9487
 B0001FTVEK    5345
@@ -84,17 +93,55 @@ B000I68BD4    4903
 B000BQ7GW8    4275
 B00007E7JU    3523
 Name: Rating, dtype: int64
-01:00:24,275 root INFO               Rating  rating_counts
+18:32:53,307 root INFO               Rating  rating_counts
 productId                          
 0972683275  4.470980           1051
 1400501466  3.560000            250
 1400501520  4.243902             82
 1400501776  3.884892            139
 1400532620  3.684211            171
-01:00:24,279 root INFO 9487
-01:00:24,594 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
-01:00:24,599 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
-01:00:25,37 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
-01:00:25,50 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
-01:00:25,228 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
-01:00:25,240 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:53,310 root INFO 9487
+18:32:53,620 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:53,625 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:54,66 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:54,79 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:54,273 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:32:54,286 matplotlib.axes._base DEBUG top of axes not in the figure, so title not moved
+18:33:02,262 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:02,449 root INFO With index config : 0 , rmse on Test Set = 1.343641161111319
+18:33:04,705 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:04,864 root INFO With index config : 1 , rmse on Test Set = 1.344018105035679
+18:33:06,794 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:06,954 root INFO With index config : 2 , rmse on Test Set = 1.3531011984750438
+18:33:08,676 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:08,836 root INFO With index config : 3 , rmse on Test Set = 1.3432656643720957
+18:33:10,898 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:11,60 root INFO With index config : 4 , rmse on Test Set = 1.3427895966092176
+18:33:13,253 root INFO user: A304XAQ7BVU0UU item: B000EVM5DK r_ui = 1.00   est = 4.05   {'was_impossible': True, 'reason': 'User and/or item is unknown.'}
+18:33:13,420 root INFO With index config : 5 , rmse on Test Set = 1.3427627998911125
+18:33:13,615 root INFO Rating matrix head:
+productId              0972683275  1400501466  1400501520  1400501776  1400532620  1400532655  140053271X  ...  B00000JII6  B00000JMUG  B00000JPPI  B00000JSGF  B00000JYLO  B00000JYWQ  B00000K135
+userId                                                                                                     ...                                                                                    
+A01852072Z7B68UHLI5UG           0           0           0           0           0           0           0  ...           0           0           0           0           0           0           0
+A0266076X6KPZ6CCHGVS            0           0           0           0           0           0           0  ...           0           0           0           0           0           0           0
+A0293130VTX2ZXA70JQS            5           0           0           0           0           0           0  ...           0           0           0           0           0           0           0
+A030530627MK66BD8V4LN           4           0           0           0           0           0           0  ...           0           0           0           0           0           0           0
+A0571176384K8RBNKGF8O           0           0           0           0           0           0           0  ...           0           0           0           0           0           0           0
+
+[5 rows x 76 columns]
+18:33:13,615 root INFO Rating matrix shape:
+(9832, 76)
+18:33:13,615 root INFO userId      A01852072Z7B68UHLI5UG  A0266076X6KPZ6CCHGVS  A0293130VTX2ZXA70JQS  A030530627MK66BD8V4LN  A0571176384K8RBNKGF8O  ...  AZXP46IB63PU8  AZYTSU42BZ7TP  AZZGJ2KMWB7R  AZZMV5VT9W7Y8  AZZST8OYL5P4Q
+productId                                                                                                                    ...                                                                          
+0972683275                      0                     0                     5                      4                      0  ...              0              0             0              0              0
+1400501466                      0                     0                     0                      0                      0  ...              0              0             0              0              0
+1400501520                      0                     0                     0                      0                      0  ...              0              0             0              0              0
+1400501776                      0                     0                     0                      0                      0  ...              0              0             0              1              0
+1400532620                      0                     0                     0                      0                      0  ...              0              0             0              0              0
+
+[5 rows x 9832 columns]
+18:33:13,740 root INFO (76, 9832)
+18:33:13,841 root INFO (76, 10)
+18:33:13,841 root INFO (76, 76)
+18:33:13,841 root INFO 75
+18:33:13,842 root INFO ['7214047977', '9575871979', '9983891212', 'B00000J0D2', 'B00000J1EP', 'B00000J1V3', 'B00000J3UJ', 'B00000J4GE', 'B00000J6WY', 'B00000JFE3', 'B00000JFIF', 'B00000JFMK', 'B00000JMUG']
